@@ -61,3 +61,8 @@ LOCALE_PATHS = (
     os.path.join(LOCAL_ROOT, 'locale'),
     ) + LOCALE_PATHS
 
+INSTALLED_APPS += ("osgeo_importer","polls")
+DJMP_AUTHORIZATION_CLASS = 'djmp.guardian_auth.GuardianAuthorization'
+TILESET_CACHE_DIRECTORY = os.path.join(LOCAL_ROOT, 'cache/layers')
+USE_DISK_CACHE=True
+LAYER_PREVIEW_LIBRARY = 'geoext'

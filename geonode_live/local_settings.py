@@ -52,3 +52,12 @@ CATALOGUE = {
 
 MEDIA_ROOT = "/var/www/geonode_live/uploaded"
 STATIC_ROOT = "/var/www/geonode_live/static"
+
+OSGEO_DATASTORE = 'geonode_live'
+OSGEO_IMPORTER_GEONODE_ENABLED = True
+#LOGGING['loggers']['osgeo_importer'] = {"handlers": ["console"], "level": "DEBUG"}
+#DATABASE_ROUTERS = ['osgeo_importer_prj.dbrouters.DefaultOnlyMigrations']
+
+IMPORT_HANDLERS = []
+#IMPORT_HANDLERS = ['osgeo_importer.handlers.FieldConverterHandler',
+#                           'osgeo_importer.handlers.geonode.GeoNodePublishHandler']
