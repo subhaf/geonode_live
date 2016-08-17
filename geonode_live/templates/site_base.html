@@ -2,3 +2,9 @@
 {% block extra_head %}
       <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/>
 {% endblock %}
+{% block extra_tab %}
+<li id="nav_polls">
+<a href="{% url "polls:index" %}">Polls</a>
+</li>
+{% endblock %}
+
